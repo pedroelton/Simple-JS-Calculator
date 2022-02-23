@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+:root {
+    --Darkest: #424242;
+    --Dark-I: #71726C;
+    --Dark-II: #A0A196;
+    --Accent: #CF5C36;
+    --Light: #FEFFEA;
+    --Lightest: #FFF;
+    --line: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--Darkest);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Nunito', Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#calculator {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 720px;
+}
+
+.calculatorBody {
+    background-color: var(--Light);
+    width: 540px;
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid var(--line);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.calculatorScreen {
+    color: var(--Dark-II);
+    background-color: var(--Darkest);
+    width: 100%;
+    height: 100px;
+    padding: 0.15em;
+    border-radius: 0.15em;
+    font-size: 4em;
+}
+
+.calculatorBrand {
+    font-size: 0.8rem;
+    color: var(--Accent);
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    display: inline-flex;
+    margin: 12px 0;
+}
+
+.calculatorBrand:hover {
+    text-decoration: underline;
+}
+
+.firstLine,
+.secondLine,
+.thirdLine,
+.fourthLine,
+.fifthLine {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.btn {
+    background-color: var(--Dark-II);
+    height: 64px;
+    width: 100%;
+    font-size: 1.5em;
+    margin: 0.5px;
+    border: 0;
+    color: var(--Light);
+}
+
+.btn:hover {
+    filter: brightness(1.2);
+}
+
+.signalsHorizontal {
+    background-color: var(--Accent);
+    color: var(--Light);
+}
+
+.plusMinus,
+.percentage,
+.ac {
+    background-color: var(--Dark-I);
+    color: var(--Light);
+}
+
+.ac {
+    border-radius: 0.5em 0 0 0;
+}
+
+.divide {
+    border-radius: 0 0.5em 0 0;
+}
+
+.equals {
+    border-radius: 0 0 0.5em 0;
+    width: 100%;
+}
+
+.largeNumber {
+    border-radius: 0 0 0 0.5em;
+    width: 202%;
+}
